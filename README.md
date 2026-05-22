@@ -127,6 +127,10 @@ Some webpages use `blob:` image URLs. The current version focuses on normal imag
 - Optional upload pipeline for protected media
 - More result templates
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Jimmy102836/prompt&type=Date)](https://www.star-history.com/#Jimmy102836/prompt&Date)
+
 ## License
 
 This project is licensed under the Apache License 2.0.

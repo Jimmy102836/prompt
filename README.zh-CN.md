@@ -125,6 +125,10 @@ https://your-domain.com/v1
 - 受保护媒体的可选上传流程
 - 更多结果模板
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Jimmy102836/prompt&type=Date)](https://www.star-history.com/#Jimmy102836/prompt&Date)
+
 ## 开源协议
 
 本项目使用 Apache License 2.0。
