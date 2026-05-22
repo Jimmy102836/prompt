@@ -1,0 +1,195 @@
+.chrometool-image-prompt-button {
+  position: absolute;
+  z-index: 2147483646;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+  padding: 7px 11px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb 58%, #4f46e5);
+  color: #fff;
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.38);
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+  font-size: 12px;
+  font-weight: 850;
+  line-height: 1;
+  backdrop-filter: blur(16px) saturate(1.25);
+  transition: filter 0.15s ease, opacity 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.chrometool-image-prompt-button:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+  box-shadow: 0 16px 36px rgba(37, 99, 235, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+.chrometool-image-prompt-button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+  transform: none;
+}
+
+.chrometool-image-prompt-popover {
+  position: absolute;
+  z-index: 2147483647;
+  box-sizing: border-box;
+  width: min(430px, calc(100vw - 16px));
+  max-height: min(520px, calc(100vh - 24px));
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 26px;
+  padding: 16px;
+  background:
+    radial-gradient(circle at 14% 0%, rgba(96, 165, 250, 0.22), transparent 36%),
+    rgba(255, 255, 255, 0.74);
+  color: #0f172a;
+  box-shadow: 0 28px 90px rgba(37, 99, 235, 0.2), 0 18px 60px rgba(15, 23, 42, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.92);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  white-space: normal;
+  backdrop-filter: blur(24px) saturate(1.35);
+}
+
+.chrometool-image-prompt-popover--loading {
+  color: #1d4ed8;
+}
+
+.chrometool-image-prompt-popover--error {
+  border-color: rgba(220, 38, 38, 0.35);
+  color: #991b1b;
+}
+
+.chrometool-image-prompt-popover__close {
+  position: sticky;
+  top: 0;
+  float: right;
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  margin: -5px -5px 8px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  border-radius: 999px;
+  background: rgba(226, 232, 240, 0.76);
+  color: #0f172a;
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 8px 20px rgba(15, 23, 42, 0.08);
+  font: inherit;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1;
+  backdrop-filter: blur(14px);
+}
+
+.chrometool-image-prompt-popover__close:hover {
+  background: rgba(203, 213, 225, 0.9);
+}
+
+.chrometool-image-prompt-tabs {
+  display: flex;
+  gap: 7px;
+  margin: 4px 32px 12px 0;
+  padding: 4px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.48);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.76);
+}
+
+.chrometool-image-prompt-tab {
+  border: 0;
+  border-radius: 12px;
+  padding: 8px 11px;
+  background: transparent;
+  color: #0f172a;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.chrometool-image-prompt-tab[aria-selected="true"] {
+  background: linear-gradient(135deg, #3b82f6, #2563eb 58%, #4f46e5);
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.36);
+}
+
+.chrometool-image-prompt-panel pre,
+.chrometool-image-prompt-popover__body pre {
+  margin: 0 0 12px;
+  overflow: visible;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: inherit;
+  font: inherit;
+}
+
+.chrometool-image-prompt-panel pre {
+  box-sizing: border-box;
+  max-height: 340px;
+  overflow: auto;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 18px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.54);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
+
+.chrometool-image-prompt-panel pre::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chrometool-image-prompt-panel pre::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.75);
+  background-clip: content-box;
+}
+
+.chrometool-image-prompt-popover__copy {
+  border: 0;
+  border-radius: 999px;
+  padding: 9px 13px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.2);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.chrometool-image-prompt-popover__copy:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .chrometool-image-prompt-popover {
+    border-color: rgba(255, 255, 255, 0.16);
+    background:
+      radial-gradient(circle at 14% 0%, rgba(96, 165, 250, 0.24), transparent 36%),
+      rgba(15, 23, 42, 0.82);
+    color: #e2e8f0;
+  }
+
+  .chrometool-image-prompt-popover--error {
+    color: #fecaca;
+  }
+
+  .chrometool-image-prompt-popover__close {
+    background: rgba(51, 65, 85, 0.8);
+    color: #e2e8f0;
+  }
+
+  .chrometool-image-prompt-tabs,
+  .chrometool-image-prompt-panel pre {
+    border-color: rgba(71, 85, 105, 0.55);
+    background: rgba(15, 23, 42, 0.46);
+  }
+
+  .chrometool-image-prompt-tab {
+    color: #e2e8f0;
+  }
+}
