@@ -1,4 +1,16 @@
-# Prompt Extractor
+<p align="center">
+  <img src="icons/icon-128.png" width="96" height="96" alt="Prompt Extractor logo">
+</p>
+
+<h1 align="center">Prompt Extractor</h1>
+
+<p align="center">
+  Generate structured AI image prompts from webpage images using your own OpenAI-compatible API.
+</p>
+
+<p align="center">
+  <a href="README.zh-CN.md"><strong>中文 README</strong></a>
+</p>
 
 Prompt Extractor is a Chrome extension that helps you generate AI image prompts directly from images on webpages. It adds a small floating **Prompt** button beside eligible images, sends the selected image to your own OpenAI-compatible vision model, and displays structured prompt results in three tabs.
 
